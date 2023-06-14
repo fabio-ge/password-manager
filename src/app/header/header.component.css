@@ -1,0 +1,24 @@
+header {
+  width: 100%;
+  border-bottom: 1px solid salmon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  background-color: var(--clr-accent);
+  color: var(--clr-text-header);
+}
+
+header h1 {
+  font-size: var(--fs-title);
+  letter-spacing: 1px;
+}
+
+header button {
+  background-color: var(--clr-button);
+  color: var(--clr-text-header);
+  font-size: var(--fs-button);
+  border: 0;
+  padding: 16px;
+  border-radius: 8px;
+}

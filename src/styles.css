@@ -1,1 +1,70 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --clr-text-header: #ffffdf;
+  --clr-bg: ghostwhite;
+  --clr-button: #262626;
+  --clr-btn-secondary: #008282;
+  --clr-accent: #8c0000;
+
+  --ff: "Barlow", sans-serif;
+  --fs-title: 40px;
+  --fs-text: 28px;
+  --fs-button: 24px;
+}
+
+/**RESET**/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  font-family: var(--ff);
+  font-size: var(--fs-text);
+  color: var(--clr-text);
+  background-color: var(--clr-bg);
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+img,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
