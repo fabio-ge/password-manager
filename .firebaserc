@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "password-manager-5c0b3": {
+      "hosting": {
+        "password-manager": [
+          "password-manager-5c0b3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "password-manager-5c0b3"
+  }
+}

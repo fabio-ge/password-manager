@@ -6,9 +6,9 @@
   --clr-accent: #8c0000;
 
   --ff: "Barlow", sans-serif;
-  --fs-title: 40px;
-  --fs-text: 28px;
-  --fs-button: 24px;
+  --fs-title: 2.2em;
+  --fs-text: 1.6em;
+  --fs-button: 1.2em;
 }
 
 /**RESET**/

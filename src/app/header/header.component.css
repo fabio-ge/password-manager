@@ -19,6 +19,6 @@ header button {
   color: var(--clr-text-header);
   font-size: var(--fs-button);
   border: 0;
-  padding: 16px;
+  padding: 0.3em;
   border-radius: 8px;
 }

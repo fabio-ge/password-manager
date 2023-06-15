@@ -1,0 +1,21 @@
+<form #f="ngForm">
+  <div class="item">
+    <input ngModel placeholder="Nome" type="text" id="name" name="name" />
+  </div>
+  <div class="item">
+    <input ngModel placeholder="URL" type="text" name="url" id="url" />
+  </div>
+  <div class="item">
+    <input
+      ngModel
+      placeholder="Immagine"
+      type="text"
+      name="imgUrl"
+      id="imgUrl"
+    />
+  </div>
+  <div class="buttons">
+    <button type="submit" (click)="onSubmit(f.value)">Salva</button>
+    <button (click)="annulla()">Annulla</button>
+  </div>
+</form>

@@ -1,0 +1,21 @@
+div.ma-notification {
+  text-align: center;
+  display: none;
+  /*transition: all 1s ease;*/
+}
+
+div.is-visible-notification {
+  display: block;
+}
+
+div.is-success {
+  background-color: lightgreen;
+}
+
+div.is-danger {
+  background-color: red;
+}
+
+div.is-warning {
+  background-color: lightskyblue;
+}
