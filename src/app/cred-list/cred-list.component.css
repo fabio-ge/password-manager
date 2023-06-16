@@ -1,0 +1,41 @@
+div.lista {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2rem;
+  margin-inline: 1em;
+}
+
+div.item {
+  width: 25%;
+  height: 11em;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px lightskyblue;
+  text-align: center;
+}
+
+div.item section.header {
+  background-color: var(--clr-btn-secondary);
+}
+
+div.item section.header img {
+  width: 50%;
+  height: 50%;
+  margin-left: 25%;
+}
+
+div.item section.body {
+  padding: 0.3em 0;
+}
+
+div.item section.body button {
+  background-color: var(--clr-button);
+  color: var(--clr-text-header);
+  font-size: var(--fs-little-button);
+  border: 0;
+  padding: 0.1em;
+  border-radius: 8px;
+  cursor: pointer;
+}

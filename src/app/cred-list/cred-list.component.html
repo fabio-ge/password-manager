@@ -1,0 +1,12 @@
+<div class="lista">
+  <div class="item" *ngFor="let cred of credList | async">
+    <section class="header">
+      <img [src]="cred.imgUrl" />
+    </section>
+    <section class="body">
+      <p>{{ cred.name }}</p>
+      <p>{{ cred.url }}</p>
+      <button (click)="deleteCred(cred.id)">Cancella</button>
+    </section>
+  </div>
+</div>
