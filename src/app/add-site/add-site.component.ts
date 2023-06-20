@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { DbService } from '../db.service';
-import { NotificaService } from '../notifica.service';
+import { DbService } from '../services/db.service';
+import { NotificaService } from '../services/notifica.service';
 import { NotificationType } from '../model/notification';
 
 @Component({
@@ -20,7 +20,6 @@ export class AddSiteComponent {
     console.log('FORM', form);
     if (form.name == '' || form.url == '' || form.imgUrl == '') {
       this.notifica.notify({
-        title: 'Errore',
         type: NotificationType.danger,
         message: 'Tutti i campi sono obbligatori',
       });
@@ -30,7 +29,6 @@ export class AddSiteComponent {
       .addCredentials(form)
       .then(() => {
         this.notifica.notify({
-          title: 'Success',
           type: NotificationType.success,
           message: 'Credenziali aggiunte con successo',
         });

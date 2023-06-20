@@ -1,6 +1,6 @@
 :root {
   --clr-text-header: #ffffdf;
-  --clr-bg: ghostwhite;
+  --clr-bg: whitesmoke;
   --clr-button: #262626;
   --clr-btn-secondary: #008282;
   --clr-accent: #8c0000;
@@ -9,6 +9,7 @@
   --fs-title: 2.2em;
   --fs-text: 1.6em;
   --fs-button: 1.2em;
+  --fs-little-button: 0.8em;
 }
 
 /**RESET**/

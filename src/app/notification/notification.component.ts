@@ -1,6 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { MaNotification, NotificationType } from '../model/notification';
-import { NotificaService } from '../notifica.service';
+import { NotificaService } from '../services/notifica.service';
 import { tap, debounceTime } from 'rxjs';
 
 @Component({
@@ -13,7 +13,6 @@ export class NotificationComponent {
 
   //Notification object with the data that is going to be showed.
   incommingNotification: MaNotification = {
-    title: '',
     message: '',
     type: NotificationType.danger,
   };

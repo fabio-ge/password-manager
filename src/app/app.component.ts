@@ -14,7 +14,8 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
-        if (e.url == '/addsite') this.showLink = false;
+        let editRegEx = /^\/editPass*/g;
+        if (e.url == '/addsite' || editRegEx.test(e.url)) this.showLink = false;
         else this.showLink = true;
       }
     });

@@ -5,7 +5,6 @@ export enum NotificationType {
 }
 
 export interface MaNotification {
-  title: string;
   message: string;
   type: NotificationType;
 }

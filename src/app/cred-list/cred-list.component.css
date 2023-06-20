@@ -39,3 +39,9 @@ div.item section.body button {
   border-radius: 8px;
   cursor: pointer;
 }
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}

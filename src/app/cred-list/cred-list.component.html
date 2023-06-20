@@ -6,7 +6,20 @@
     <section class="body">
       <p>{{ cred.name }}</p>
       <p>{{ cred.url }}</p>
-      <button (click)="deleteCred(cred.id)">Cancella</button>
+      <div class="buttons">
+        <button (click)="deleteCred(cred.id)">Cancella</button>
+        <button
+          routerLink="/editPass"
+          [queryParams]="{
+            id: cred.id,
+            name: cred.name,
+            url: cred.url,
+            imgurl: cred.imgUrl
+          }"
+        >
+          Password
+        </button>
+      </div>
     </section>
   </div>
 </div>

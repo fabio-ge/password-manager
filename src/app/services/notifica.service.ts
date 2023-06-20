@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ReplaySubject } from 'rxjs';
-import { MaNotification } from './model/notification';
+import { MaNotification } from '../model/notification';
 
 @Injectable({
   providedIn: 'root',
