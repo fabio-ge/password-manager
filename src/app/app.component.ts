@@ -15,7 +15,8 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
         let editRegEx = /^\/editPass*/g;
-        if (e.url == '/addsite' || editRegEx.test(e.url)) this.showLink = false;
+        if (e.url == '/addsite' || editRegEx.test(e.url) || e.url == '/')
+          this.showLink = false;
         else this.showLink = true;
       }
     });

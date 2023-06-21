@@ -13,9 +13,10 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { NotificationComponent } from './notification/notification.component';
 import { CredListComponent } from './cred-list/cred-list.component';
 import { PasswordComponent } from './password/password.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AddSiteComponent, NotificationComponent, CredListComponent, PasswordComponent],
+  declarations: [AppComponent, HeaderComponent, AddSiteComponent, NotificationComponent, CredListComponent, PasswordComponent, LoginComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule, provideFirebaseApp(() => initializeApp(environment.firebase)), provideAuth(() => getAuth()), provideFirestore(() => getFirestore())],
   providers: [],
   bootstrap: [AppComponent],

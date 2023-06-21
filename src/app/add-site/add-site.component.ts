@@ -42,6 +42,6 @@ export class AddSiteComponent {
   }
 
   private goHome(): void {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/home');
   }
 }

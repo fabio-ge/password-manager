@@ -1,0 +1,9 @@
+div.login {
+  margin-top: 2em;
+}
+
+div.login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
